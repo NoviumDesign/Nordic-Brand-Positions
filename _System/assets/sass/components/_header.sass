@@ -1,0 +1,92 @@
+$submenu-width: em(250px)
+
+header
+  margin-bottom: $base-spacing*1.5
+  position: relative
+  z-index: 999
+
+.header-top
+  background-color: $base-background-color
+  padding: $small-spacing 0
+  display: none
+
+  +breakpoint($large-screen)
+    display: block
+
+  .top-navigation
+    @extend .container
+
+    ul
+      @extend .no-list-style
+      @extend .horizontal-list
+
+      float: right
+
+      li
+        margin-right: $small-spacing
+
+        a
+          color: $base-font-color
+
+          &:hover
+            color: lighten($base-font-color, 50%)
+
+        &:after
+          padding-left: $small-spacing
+          content: "|"
+
+        &:last-child:after
+          padding: 0
+          content: none
+
+.header-navigation
+  @extend .container
+
+  border-bottom: $base-border
+  border-color: $green
+
+  .logo-container
+    float: left
+
+    img
+      display: block
+      padding: $base-spacing 0
+
+  .main-navigation
+    @extend .no-list-style
+    @extend .horizontal-list
+
+    display: none
+    float: right
+    margin-top: $small-spacing
+
+    +breakpoint($large-screen)
+      display: block
+
+    a
+      color: $base-font-color
+
+      &:hover
+        color: lighten($base-font-color, 50%)
+
+    ul > li
+      position: relative
+
+      > ul
+        background-color: white
+        display: none
+        position: absolute
+        top: 20px
+        left: 0
+        padding: $small-spacing
+        width: $submenu-width
+        box-shadow: 0 3px 6px rgba(0,0,0,0.18)
+
+        li
+          display: block
+
+          a
+            width: 100%
+
+      &:hover > ul
+        display: block

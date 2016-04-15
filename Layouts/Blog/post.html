@@ -1,0 +1,12 @@
+<div class="news-post">
+  <div class="post-details"> {{ date | date: '%d MMM yyyy' }} </div>
+  <h3 class="post-title"> {{ title }} </h3>
+  <div class="post-body">
+    {% unless postFeaturedImage == empty %}<img src="{{ postFeaturedImage }}">{% endunless %}
+    {{ body }}
+  </div>
+</div>
+<div class="pagination">
+  <span class="previous"><a href="/press-och-nyheter">Tillbaka till Press & Nyheter</a></span>
+</div>
+<!-- END .blog-post -->

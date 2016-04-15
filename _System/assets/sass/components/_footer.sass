@@ -1,0 +1,53 @@
+footer
+  +clearfix
+  background-color: $dark-gray
+  margin-top: $base-spacing
+  padding: $base-spacing*1.5 0
+  
+  a
+    color: darken(#fff, 10%)
+
+  ul
+    list-style: none
+
+  ul,
+  li
+    margin: 0
+    padding: 0
+
+  nav
+    +clearfix
+
+  .left
+    float: left
+    > ul
+      +clearfix
+
+  .right
+    color: darken(#fff, 10%)
+    float: left
+    h5
+      font-size: $h3-font-size
+      margin-bottom: 0.3em
+
+  .header
+    float: left
+    margin-right: 4em
+    margin-bottom: 1em
+    > a
+      font-size: $h3-font-size
+      font-family: $heading-font-family
+      margin-bottom: 0.3em
+      cursor: default
+      &:hover
+        color: #fff
+
+  hr
+    display: block
+    clear: both
+
+  .copy
+    clear: both
+    color: darken(#fff, 10%)
+    a
+      text-decoration: underline

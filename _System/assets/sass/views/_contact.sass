@@ -1,0 +1,37 @@
+.contact-section
+  +breakpoint($medium-screen)
+    padding: 0 $base-spacing
+
+.contact-container
+  @extend .container
+
+  margin-bottom: $base-spacing
+
+  .contact-main
+    +span(12)
+
+    +breakpoint($medium-screen)
+      +span(10)
+
+    +breakpoint($large-screen)
+      +span(7)
+
+    .introduction
+      margin-bottom: $base-spacing
+
+  .form
+    +span(12)
+    margin-bottom: $base-spacing
+
+    +breakpoint($medium-screen)
+      +span(7)
+      margin-bottom: 0
+
+  .information-list
+    +span(12)
+
+    +breakpoint($medium-screen)
+      +span(5 last)
+
+    ul
+      @extend .no-list-style

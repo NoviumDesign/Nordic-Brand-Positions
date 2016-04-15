@@ -1,0 +1,59 @@
+.people-section
+  margin-bottom: $base-spacing
+
+  +breakpoint($medium-screen)
+    padding: 0 $base-spacing
+
+.people-header, .people-list
+  @extend .container
+
+.people-list
+  border-top: $base-border
+
+  ul
+    @extend .no-list-style
+    @extend .horizontal-list
+
+    +clearfix
+    padding-top: $base-spacing
+
+    li
+      +span(12)
+      margin-bottom: $base-spacing
+
+      +breakpoint($small-plus-screen)
+        +gallery(6)
+
+      +breakpoint($medium-screen)
+        +gallery(4)
+
+      +breakpoint($large-screen)
+        +gallery(3)
+
+      a.consultant
+        display: block
+        +clearfix
+        padding: 0
+        color: $base-font-color
+
+        &:hover
+          color: lighten($base-font-color, 50%)
+
+          img
+            opacity: 0.75
+            transition: opacity $base-duration $base-timing
+
+    img
+      display: block
+      margin-bottom: $small-spacing
+
+    .mail
+      color: $action-color
+
+      &:hover
+        color: shade($action-color, 20%)
+
+    span, a
+      padding: 0 $small-spacing
+      word-wrap: break-word
+      display: block

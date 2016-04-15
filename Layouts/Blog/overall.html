@@ -1,0 +1,19 @@
+<body class="news-body">
+  <div class="news-main">
+    <div class="news-header">
+      <h1>{{ title | replace: 'och', '&' }}</h1>
+    </div>
+    <div class="news-list">
+      {tag_postlist}
+
+      <div class="pagination">
+        {% if pagination.previousPageUrl != "#" %}
+          <span class="previous"><a href="{{ pagination.previousPageUrl }}">Nyare inlägg</a></span>
+        {% endif %}
+        {% if pagination.nextPageUrl != "#" %}
+          <span class="next"><a href="{{ pagination.nextPageUrl }}">Äldre inlägg</a></span>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</body>

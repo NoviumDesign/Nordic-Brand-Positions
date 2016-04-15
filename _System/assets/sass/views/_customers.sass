@@ -1,0 +1,25 @@
+.customer-list-container
+  @extend .article-container //same spans as subpage article
+
+  border-top: $base-border
+
+  .customer-list
+    +clearfix
+    padding-top: $base-spacing
+    
+    +breakpoint($medium-screen)
+      padding: $base-spacing $base-spacing 0 $base-spacing
+
+  .row
+    +span(full)
+    
+    +breakpoint($medium-screen)
+      +gallery(4)
+
+    ul
+      @extend .no-list-style
+      margin-bottom: $base-spacing
+
+    h4
+      font-family: 'Proxima Bold'
+      text-transform: none

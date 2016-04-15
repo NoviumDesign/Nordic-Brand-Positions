@@ -1,0 +1,48 @@
+body.consultants .people-list
+  border: none
+
+.consultant-main
+  @extend .container
+
+  position: relative
+  border-bottom: $base-border
+  min-height: 450px
+
+  .consultant-article
+    +span(full)
+    margin-bottom: $base-spacing*2
+    position: relative
+    z-index: 99
+
+    +breakpoint($medium-screen)
+      +span(9)
+
+    +breakpoint($large-screen)
+      +span(7)
+
+    .name
+      display: inline-block
+      margin-bottom: $base-spacing
+
+  .consultant-image
+    +span(full)
+    position: absolute
+    right: $base-spacing
+    left: $base-spacing
+    bottom: 0
+    z-index: 9
+    opacity: 0.15
+
+    +breakpoint($medium-screen)
+      +span(8 last)
+      left: auto
+
+    +breakpoint($large-screen)
+      +span(5 last)
+      opacity: 1
+
+    img
+      display: block
+
+      +breakpoint($medium-screen)
+        float: right

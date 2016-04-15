@@ -1,0 +1,60 @@
+.news-body
+  background-image: url('/_System/assets/img/logo-background.svg')
+  background-size: 100%
+  background-repeat: no-repeat
+  background-position: center
+
+  .news-main
+    @extend .container
+
+  .news-header, .news-list,
+    +span(full)
+
+    +breakpoint($medium-screen)
+      +span(10)
+      +push(1)
+
+    +breakpoint($large-screen)
+      +span(7)
+      +push(2.5)
+
+  .post-body img
+    margin-top: $small-spacing
+    margin-bottom: $small-spacing
+
+  .news-header
+    +breakpoint($medium-screen)
+      padding: 0 $base-spacing
+
+  .news-list .news-post
+    border-bottom: $base-border
+    padding-bottom: $base-spacing
+    margin-bottom: $base-spacing
+
+    +breakpoint($medium-screen)
+      padding: 0 $base-spacing $base-spacing $base-spacing
+
+    p
+      margin: 0
+
+    .post-title a
+      color: $base-font-color
+
+      &:hover
+        color: lighten($base-font-color, 50%)
+
+  .pagination
+    +clearfix
+    margin-bottom: $base-spacing
+
+    +breakpoint($medium-screen)
+      padding: 0 $base-spacing
+
+    .previous, .next
+      display: inline-block
+
+    .previous
+      float: left
+
+    .next
+      float: right

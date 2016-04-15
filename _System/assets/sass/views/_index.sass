@@ -1,0 +1,104 @@
+.index
+  footer
+    margin-top: 0
+
+.index-main
+  
+  +breakpoint($medium-screen)
+    padding: 0 $base-spacing
+
+  .content-container
+    @extend .container
+
+    border-bottom: $base-border
+    padding-bottom: $small-spacing
+    margin-bottom: $small-spacing
+
+    .quote
+      +span(full)
+
+      +breakpoint($medium-screen)
+        +span(6)
+
+    .portrait
+      +span(full)
+      margin-bottom: $base-spacing
+
+      +breakpoint($medium-screen)
+        +span(6 last)
+
+  .button-container
+    @extend .container
+
+    margin-bottom: $base-spacing
+
+.index-cta
+  background-color: $base-background-color
+  padding: 0 $base-spacing
+
+  .content-container
+    @extend .container
+
+    .content
+      +span(full)
+      padding: $base-spacing*1.5 0
+
+      +breakpoint($medium-screen)
+        +span(8)
+        +push(2)
+        padding: $base-spacing*3 0
+
+      +breakpoint($large-screen)
+        +span(7)
+        +push(2.5)
+
+.index-read-more
+
+  .read-more-section
+
+    .content-container
+      @extend .container
+
+      .content
+        +span(full)
+
+        +breakpoint($large-screen)
+          +span(10)
+          +push(1)
+
+        .quote-container
+          +span(full)
+          padding: $base-spacing*1.5 0
+
+          +breakpoint($medium-screen)
+            +span(6 of 10)
+            padding: $base-spacing*3 0
+
+          .quote, .button-container
+            padding: 0 $base-spacing
+
+          .quote
+            border-bottom: $base-border
+            margin-bottom: $small-spacing
+
+        .portrait
+          +span(full)
+
+          +breakpoint($medium-screen)
+            +span(4 of 10 last)
+            padding-top: $base-spacing
+
+          img
+            display: block
+
+    &:nth-child(2n+2)
+      background-color: $light-gray
+
+      .content
+
+        +breakpoint($medium-screen)
+          .quote-container
+            +span(6 of 10 last)
+
+          .portrait
+            +span(4 of 10)
