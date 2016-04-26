@@ -7,6 +7,22 @@
   +breakpoint($medium-screen)
     padding: 0 $base-spacing
 
+  .jumbotron
+    background-color: #00CFD8
+
+    .content
+      +span(full)
+
+      +breakpoint($large-screen)
+        +span(10)
+        +push(1)
+
+      padding: $base-spacing $base-spacing 0 $base-spacing
+
+      h1
+        color: #FFFFFF
+
+
   .content-container
     @extend .container
 
@@ -16,13 +32,15 @@
 
     .quote
       +span(full)
+      padding-top: $small-spacing
 
       +breakpoint($medium-screen)
         +span(6)
 
     .portrait
       +span(full)
-      margin-bottom: $base-spacing
+      +breakpoint(max-width $medium-screen)
+        margin-bottom: $base-spacing
 
       +breakpoint($medium-screen)
         +span(6 last)
@@ -92,7 +110,6 @@
             display: block
 
     &:nth-child(2n+2)
-      background-color: $light-gray
 
       .content
 
@@ -102,3 +119,15 @@
 
           .portrait
             +span(4 of 10)
+
+    .position
+      background-color: #3A3839
+      color: #FFFFFF
+
+    .sponsor
+      background-image: url('/_System/assets/img/boats.jpg')
+      background-size: cover
+      background-positon: center center
+
+      .portrait
+        padding-bottom: $base-spacing

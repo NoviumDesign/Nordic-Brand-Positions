@@ -1,8 +1,17 @@
 <header>
   <div class="header-top">
-    <nav class="top-navigation">
-      {module_menu,1829255}
-    </nav>
+    <div class="inner">
+      <div class="lang-selector">
+        <select id="langSelect">
+          <option value="/se/" {% if globals.get.ID contains "/se/" %}selected{% endif %}>Svenska</option>
+          <option value="/no/" {% if globals.get.ID contains "/no/" %}selected{% endif %}>Norsk</option>
+          <option value="/" {% unless globals.get.ID contains "/se/" or globals.get.ID contains "/no/" %}selected{% endunless %}>English</option>
+        </select>
+      </div>
+      <nav class="top-navigation">
+        {module_menu, version="2", menuId="1900515"}  
+      </nav>
+    </div>
   </div>
 
   <div class="header-navigation">
@@ -11,13 +20,13 @@
     </div>
 
     <nav class="main-navigation">
-      {module_menu,14623}
+      {module_menu, version="2", menuId="1900510"}  
     </nav>
 
-    <span class="nav-toggle" id="navToggle">
+    <span class="nav-toggle" id="navToggle"></span>
     <nav id="mobileNav">
-      {module_menu,14623}
-      {module_menu,1829255}
+      {module_menu, version="2", menuId="1900510"}  
+      {module_menu, version="2", menuId="1900515"}
     </nav>
 
   </div>

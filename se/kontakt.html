@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Kontakta GoGenius</title>
+        <meta name="description" content="">
+    </head>
+    <body>
+        <section class="contact-section">
+          <div class="contact-container">
+            <div class="contact-main">
+              <h1 ice:editable="multiline">Välkommen att höra av dig!</h1>
+              <p class="introduction" ice:editable="multiline">Är du nyfiken på hur en innovativ varumärkespositionering kan göra din verksamhet mer konkurrenskraftig? Eller har du andra frågor? Varmt välkommen att ta kontakt med oss.</p>
+
+              <div class="form">
+                <div id="formMessage"></div>
+                <form id="contactForm" name="catwebformform97906" method="post" enctype="multipart/form-data" action="/FormProcessv2.aspx?WebFormID=10090&OID={module_oid}&OTYPE={module_otype}&EID={module_eid}&CID={module_cid}">
+                  <div class="form-row">
+                    <input data-validation="length" data-validation-length="min4" data-validation-error-msg="Fyll i ditt namn" placeholder="Namn" type="text" name="FullName" id="FullName" class="cat_textbox" maxlength="255" />
+                  </div>
+                  <div class="form-row">
+                    <input data-validation="email" data-validation-error-msg="Fyll i en korrekt epost-adress" placeholder="Epost" type="text" name="EmailAddress" id="EmailAddress" class="cat_textbox" maxlength="255" />
+                  </div>
+                  <div class="form-row">
+                    <textarea data-validation="required" data-validation-error-msg="Skriv ett meddelande" placeholder="Meddelande" name="CAT_Custom_869" id="CAT_Custom_869" cols="10" rows="4" class="cat_listbox" onkeydown="if(this.value.length>=4000)this.value=this.value.substring(0,3999);"></textarea>
+                  </div>
+                  <div class="form-row">
+                    <input class="cat_button" type="submit" value="Skicka" id="catwebformbutton" />
+                  </div>
+                </form>
+              </div>
+
+              <div class="information-list">
+                <ul>
+                  <li><strong>Nordic Brand Positions AB</strong></li>
+                  <li>Box 55610</li>
+                  <li>102 14 Stockholm</li>
+                </ul>
+                <ul>
+                  <li>+46 (0)8 545 672 40</li>
+                  <li><a href="mailto:info@nordicbrand.eu">info@nordicbrand.eu</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="people-section">
+          <div class="people-list">
+            <ul>
+              <li ice:editable="section">
+                <div>
+                  <img ice:editable="image" src="/images/coworkers/tony.jpg" alt="Tony Aperia">
+                  <span class="name" ice:editable="line">Tony Aperia</span>
+                  <span ice:editable="line">+46 (0) 707 75 29 17</span>
+                  <a ice:editable="link, line" class="mail" href="tony@nordicbrandpositions.com">tony@nordicbrandpositions.com</a>
+                </div>
+              </li>
+              <li ice:editable="section">
+                <div>
+                  <img ice:editable="image" src="/images/coworkers/tony.jpg" alt="Tony Aperia">
+                  <span class="name" ice:editable="line">Tom</span>
+                  <span ice:editable="line">+46 (0) 707 75 29 17</span>
+                  <a ice:editable="link, line" class="mail" href="tom@nordicbrandpositions.com">tom@nordicbrandpositions.com</a>
+                </div>
+              </li>
+              <li ice:editable="section">
+                <div>
+                  <img ice:editable="image" src="/images/coworkers/nils.jpg" alt="Tony Aperia">
+                  <span class="name" ice:editable="line">Nils</span>
+                  <span ice:editable="line">+46 (0) 707 75 29 17</span>
+                  <a ice:editable="link, line" class="mail" href="nils@nordicbrandpositions.com">nils@nordicbrandpositions.com</a>
+                </div>
+              </li>
+              <li ice:editable="section">
+                <div>
+                  <img ice:editable="image" src="/images/coworkers/morten.jpg" alt="Tony Aperia">
+                  <span class="name" ice:editable="line">Morten</span>
+                  <span ice:editable="line">+46 (0) 707 75 29 17</span>
+                  <a ice:editable="link, line" class="mail" href="morten@nordicbrandpositions.com">morten@nordicbrandpositions.com</a>
+                </div>
+              </li>
+            </ul>
+        </div>
+      </section>
+    </body>
+</html>

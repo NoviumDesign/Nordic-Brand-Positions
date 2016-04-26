@@ -60,7 +60,7 @@ $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
 // Colors
-$blue: #5893A8;
+$blue: #00CFD8;
 $green: #1DC454;
 $red: #c0392b;
 $dark-gray: #333;
@@ -69,7 +69,7 @@ $light-gray: #F2F2F2;
 
 // Font Colors
 $base-font-color: #000;
-$action-color: shade($green, 15%);
+$action-color: shade($blue, 15%);
 
 // Border
 $base-border-color: lighten($dark-gray, 10%);

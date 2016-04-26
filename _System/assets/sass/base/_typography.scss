@@ -21,7 +21,6 @@ h6 {
 
 h1 {
   font-size: $h1-font-size*0.75;
-  color: $green;
   margin-bottom: em(6px);
 
   @include breakpoint($medium-screen) {

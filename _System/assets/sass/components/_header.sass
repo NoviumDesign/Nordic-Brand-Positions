@@ -13,14 +13,21 @@ header
   +breakpoint($large-screen)
     display: block
 
-  .top-navigation
+  .inner
     @extend .container
+
+  .lang-selector
+    float: left
+
+    select
+      margin: 0
+
+  .top-navigation
+    float: right
 
     ul
       @extend .no-list-style
       @extend .horizontal-list
-
-      float: right
 
       li
         margin-right: $small-spacing
@@ -43,7 +50,7 @@ header
   @extend .container
 
   border-bottom: $base-border
-  border-color: $green
+  border-color: #000000
 
   .logo-container
     float: left
@@ -78,12 +85,17 @@ header
         position: absolute
         top: 20px
         left: 0
-        padding: $small-spacing
+        padding: $small-spacing 0
         width: $submenu-width
         box-shadow: 0 3px 6px rgba(0,0,0,0.18)
 
         li
           display: block
+          padding: 0 $small-spacing
+
+          ul
+            left: -250px
+            top: 0
 
           a
             width: 100%

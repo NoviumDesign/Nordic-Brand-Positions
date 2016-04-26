@@ -14,6 +14,19 @@ $(document).ready(function() {
   });
 });
 
+/* -------- _System/assets/js/lang-selector.js -------- */ 
+
+$(function(){
+  // bind change event to select
+  $('#langSelect').on('change', function () {
+      var url = $(this).val(); // get selected value
+      if (url) { // require a URL
+          window.location = url; // redirect
+      }
+      return false;
+  });
+});
+
 /* -------- _System/assets/js/mobile-nav.js -------- */ 
 
 $( "#navToggle" ).click(function() {
