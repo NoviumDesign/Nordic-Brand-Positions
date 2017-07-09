@@ -3,31 +3,23 @@
     margin-top: 0
 
 .index-main
-  
-  +breakpoint($medium-screen)
-    padding: 0 $base-spacing
-
   .jumbotron
     background-color: #00CFD8
+    background-image: url('/_System/assets/img/jumbotron.jpg')
+    background-repeat: no-repeat
+    background-position: right bottom
 
     .content
       +span(full)
 
-      +breakpoint($large-screen)
-        +span(10)
-        +push(1)
-
-      padding: $base-spacing $base-spacing 0 $base-spacing
+      padding: $base-spacing 0 $base-spacing 0
 
       h1
         color: #FFFFFF
 
-
   .content-container
     @extend .container
-
-    border-bottom: $base-border
-    padding-bottom: $small-spacing
+    padding: $small-spacing 0
     margin-bottom: $small-spacing
 
     .quote
@@ -76,13 +68,11 @@
 
     .content-container
       @extend .container
+      padding-top: $base-spacing!important
+      padding-bottom: $base-spacing!important
 
       .content
         +span(full)
-
-        +breakpoint($large-screen)
-          +span(10)
-          +push(1)
 
         .quote-container
           +span(full)
@@ -91,9 +81,6 @@
           +breakpoint($medium-screen)
             +span(6 of 10)
             padding: $base-spacing*3 0
-
-          .quote, .button-container
-            padding: 0 $base-spacing
 
           .quote
             border-bottom: $base-border
@@ -108,6 +95,8 @@
 
           img
             display: block
+            margin-left: auto
+            margin-right: auto
 
     &:nth-child(2n+2)
 

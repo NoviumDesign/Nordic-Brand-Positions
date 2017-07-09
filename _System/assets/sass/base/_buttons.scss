@@ -41,7 +41,6 @@
   padding: em(3px) 0 em(3px) $base-spacing*2;
 
   &:before {
-    content: url('/_System/assets/icons/arrow.svg');
     position: absolute;
     top: 0;
     left: 0;
@@ -50,6 +49,21 @@
   &:hover{
     color: lighten($base-font-color, 50%);
   }
+}
+
+.read-more--white:before {
+  content: url('/_System/assets/icons/arrow-white.svg');
+}
+
+.read-more--white-text {
+  color: #ffffff;
+  &:hover{
+    color: darken(#ffffff, 30%);
+  }
+}
+
+.read-more--blue:before {
+  content: url('/_System/assets/icons/arrow-blue.svg');
 }
 
 input[type="submit"] {
